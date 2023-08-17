@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana,  sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: medium;
+}
+header {
+    display: block;
+    background-color: #157293;
+    width: 100%;
+}
+nav{
+    width: max-content;
+}
+nav h2{
+    position: relative;
+    margin: 25px;
+    font-size: xx-large;
+}
+.oghene_welcome{
+    margin: 20px;
+    width: 30%;
+}
+.oghene_welcome h1 {
+    padding: 0px 0px 10px 10px;
+    color: rgb(57, 118, 139);
+}
+.oghene_welcome p {
+    padding: 0px 0px 10px 10px;
+    width: 100%;
+    font-size: smaller;
+    justify-content: space-between;
+    color: rgb(59, 55, 55);
+}
+.oghene_welcome img {
+    padding: 0px 0px 10px 10px;
+    width: 100%;
+    justify-content: center;
+}
+#section2 {
+    display: block;
+    width: 100%;
+    background-color: rgba(59, 55, 55, 0.1);
+}
+#section2 div{
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+}
+#section2 div img{
+    width: 100%;
+    border: 1px solid none;
+    border-radius: 7%;
+}
+#section2 div h2 {
+    color: rgb(57, 118, 139);
+    font-size: 22px;
+    padding: 0px;
+    margin: 12  px;
+}
+#section2 div button {
+    background-color: rgb(57, 118, 139);
+    border: 0 solid rgb(57, 118, 193);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    position: static;
+    width: 150px;
+    color: white;
+}   
+
+
+.navigation_bar_container {
+    display: flex;
+    color: white;
+    font-weight:bold;
+    text-decoration: 2px solid;
+    margin: 0 auto;
+    max-width: max-content;
+}
+.hide {
+    display: none;
+    width: 94%;
+    top: 3rem;
+    padding-top: 0;
+    width: max-content;
+    height: auto;
+    background-color: #157293;
+    margin: 40px;
+    position: inherit;
+
+}
+.navbar_link a{
+    display: inline-block;
+    color: white;
+    padding: 5px 20px;
+    font-size: small;
+    position: relative;
+    left: 30%;
+    
+}
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    position: static auto;
+    margin-right: 1px;
+    margin-left: 220px;
+    margin-top: 20px;
+    height: 10px;
+    width: 10px;  
+    background-color: none;
+    
+}
+.hamburger .line{
+    display: block; 
+    width: 30px;
+    height: 3px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.link {
+    text-decoration: none;
+}
+.oghene_welcome {
+    display: inline-block;
+    width: fit-content;
+
+}
+.section3{
+    margin: 0px;
+    padding: 30px;
+    padding-right: 2px;
+    color: white;
+    display: block;
+    background-color: #4797ab;
+    width: 100%;
+    align-items: center;
+}
+.section3_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 10px;
+    align-items: center;
+}
+.items3{
+    margin: 5px;
+}
+.section3 h2 {
+    font-size: 1.5em;
+    width: 90%;
+}
+.contact {
+    width: 100%;
+    background-color: white;
+    color: rgb(57, 118, 139);
+    padding: 10px;
+    font-size: medium;
+    border: 5px solid white;
+    border-radius: 12%;
+    height: fit-content;
+}
+.tel {
+    width: 100%;
+    background-color: rgb(19, 129, 168);
+    color: rgb(57, 118, 139);
+    padding: 10px;
+    font-size: medium;
+    border: 5px solid rgb(19, 129, 168);
+    border-radius: 12%;
+    height: fit-content;
+}
+.section3 a {
+    text-decoration: none;
+} */
+p.call_me{
+    font-size: x-large;
+}
+p.call_me::before{
+    content: url(/Assets/call_logo.png);
+}
+footer {
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    background-color: #157293;
+    color: white;
+}
+.footer_prompt {
+    padding: 20px;
+}
+.footer_prompt h3 {
+    padding: 15px;
+}
+.footer_icons a img {
+    padding: 1px;
+    margin-bottom: 50px;
+    width: 38px;
+    height: 38pxs;
+}
+.footer_icons a img:hover {
+    width: 40px;
+    height: 40px;
+}
+h2.email a {
+    text-decoration: none;
+}
+p.email a {
+    text-decoration: none;
+}
+div.email :hover{
+    cursor: pointer;
+}
+@media screen and (max-width :280px ) {
+    .hamburger{
+        margin-left: 110px;
+    }
+    footer {
+        padding: 5px;
+       text-align: center;
+    }
+    .footer_copyright {
+    
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width :240px ) {
+    .hamburger{
+        margin-left: 70px;
+    }
+    footer {
+        padding: 1px;
+       text-align: center;
+    }
+    
+}
+@media screen and (min-width :768px ) {
+    .hamburger{
+        display: none;
+    }
+    .navbar__link {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 20px;
+    
+    }
+    .oghene_welcome {
+       display: flex;
+    }
+    .oghene_welcome p {
+        font-size: 1.5em;
+    }
+    .oghene_welcome h1 {
+        font-size: 3em;
+    }
+    #section2 {
+        display: flex;
+        flex-wrap: wrap;
+        
+        margin-left: 40px;
+        padding-left: 25px;
+        padding-top: 30px;
+    } 
+    #section2 div{
+        width: 45%;
+        border: 1px solid none;
+        border-radius: 7%;
+    }
+    #section2 button {
+        float: right;
+    }
+    .section3 {
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        background-image: url(/Assets/background-section.png);
+        background-size: cover;
+    }
+    .navbar_link a{
+        display: flex;
+        left: 30%;
+    }
+    .hide{
+        display: flex;
+    }
+}
+@media screen and (min-width :1024px ) {
+    .hamburger{
+        display: none;
+    }
+    .navbar__link {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px auto;
+        margin: 0px auto;
+    
+    }
+    .oghene_welcome {
+       display: flex;
+    }
+    #section2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0px 0px 0px;
+        padding: 50px 50px 50px 50px;
+        justify-content: space-between;
+    } 
+    #section2 div{
+        width: 30%;
+        border: 1px solid none;
+        border-radius: 7%;
+    }
+    #section2 button {
+        float: right;
+    }
+    #section2 div.design {
+        width: 45%;
+    }
+    .section3 {
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        background-image: url(/Assets/background-section.png);
+        background-size: cover;
+    }
+    .section3_container {
+        margin: 50px;
+    }
+    .connect {
+        width: 50%;
+        margin: 50px;
+    }
+    .oghene_welcome{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .oghene_welcome div {
+        width: 50%;
+        padding: 60px;
+    
+    }
+    .navbar_link a{
+        display: flex;
+        left: 99%;
+    }
+    .hide {
+        display: flex;
+    }
+}
