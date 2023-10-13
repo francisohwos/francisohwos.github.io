@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sterling Bank Auction Page</title>
+    <link rel="icon" href="/asset/img/" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/css/bid-page.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/auction.css">
+    
+</head>
+<body>
+    <header class="header">
+        <!-- <a href="#" class="logo">Logo</a> -->
+        <a href="../index.html">
+            <img src="/img/SterlingLogo.svg" class="logo"> 
+        </a>
+        
+    
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Pages +</a>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Services +</a>
+                            <ul>
+                                <li><a href="#">Auction Status</a></li>
+                                <li><a href="/pages/review.html">Review</a></li>
+                                <li><a href="#">Inspection</a></li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/pages/faq.html" class="active">FAQs</a></li>
+                <li><a href="#">Categories +</a>
+                    <ul>
+                        <li><a href="/pages/auction-page-all-items.html">All</a></li>
+                        <li><a href="/pages/auction-page-vehicles.html">Cars</a></li>
+                        <li><a href="/pages/auction-page-furnitures.html">Furnitures</a></li>
+                        <li><a href="/pages/auctions-page-electronics.html">Electronics</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <div class="container">
+         <div class="images_display"> <!-- The several images -->
+            <div class="slider">
+                <img src="/img/auction-pictures/Benz1.jpg" alt="Benz1" class="mbenz">
+            </div>
+            <!-- <button class="btn" onclick="prev()">Prev</button>
+            <button class="btn" onclick="next()">Next</button> -->
+
+            <i class="fa-solid fa-arrow-left fa-2xl" onclick="prev()"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-arrow-right fa-2xl" onclick="next()"></i>
+        </div>
+
+        <div class="bid_details">   <!-- Details of bidded item and bid placement -->
+            <div class="details">
+                <h2>Item type</h2>
+                <h3>Cars</h3>
+            </div>
+            <div class="details2">    <!-- Details of bidded item and bid placement -->
+                <div class="another_details">
+                    <h3>Brand</h3>
+                    <p>Mercedes Benz</p>
+                </div>
+                <div class="another_details">
+                    <h3>Year</h3>
+                    <p>2008</p>
+                </div>
+                <div class="another_details">
+                    <h3>Mileage</h3>
+                    <p>68,345km</p>
+                </div>
+            </div>
+            <div class="new">
+                <h2>Time left for bid: <span id="timer"></span></h2>
+            </div>
+
+            <div class="description">
+                <h4>Current Bid<span class ='testing' style="font-size: 10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Reserve has not been met</span></h4>
+                <h2 class>N3,000,000</h2>
+                
+                <p style="text-decoration: underline;">3 bids</p>
+                <input type="number" class="input-field"> <button class="bid_button" type="submit">Place bid</button>
+                
+                <p>Enter N3,000,000 or more</p>
+                
+                <p class="update"><i class="fa-solid fa-circle-exclamation" style="color: #202122;"></i>
+                    NOTE: Delivery logistics and cost is to be arranged by bidder</p>                                                                                                                                                                               
+                <!-- <h3>Buy it Now<h3> -->
+                    <!-- <a class = 'link_update' href="/"></a> -->
+                <!-- <p>N4,000,000</p> -->
+                <!-- <button class="btn1" id="click">Buy it Now</button> <button class ="btn2" id="click">Favorite</button> -->
+            </div>
+            <!-- <div class ="payment_details">
+                <h3 class="purchase">Shipping: N40,000</h3>
+                <h3 class="purchase">Car Location: Ilorin, Kwara</h3>
+                <h3 class="purchase">Ships to: Lagos & Ibadan</h3>
+                <h3 class="purchase">Payments: 
+                    <img class ="money_things" src="/asset/img/payment.png" alt="pymt_processors">
+                </h3>   
+            </div> -->
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sterling Auction Hub</h4>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><a href="#">about the platform</a></li>
+                        <li><a href="#">Available services</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Bid status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Enquiry and Resolution</h4>
+                    <hr>
+                    <br>
+                    <p class="p1">Get enquires, reviews and offers available.</p>
+                    <p class="p2">Type the subject of your email in the box below.</p>
+                    <br>
+
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Enter your email subject">
+                        <button type="submit"><i class='bx bxs-envelope'></i></button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>    
+        
+        <div class="container footer-col2">
+            <hr>
+            <br>
+            <div class="bottom">
+                <!-- <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Cookies policy</a></li>
+                </ul> -->
+                <p style="text-align: center;">© 2023 Vanilla FrontEnd developement Group for Sterling Bank. All rights reserved.</p>
+            </div>
+            <br>
+            <hr>
+        </div>
+    </footer>
+
+    <script src="/js/script2.js"></script>
+    <script src="/js/timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    <!-- <script src="sweetalert2.min.js"></script> -->
+    <!-- <script src="/asset/js/test.js"></script> -->
+</body>
+</html>

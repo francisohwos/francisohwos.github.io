@@ -1,0 +1,319 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Testimonial HTML</title>
+<!--style----->
+<style>
+    body{
+        font-family:poppins;
+    }
+</style>
+<link rel="stylesheet" href="/style.css"/>
+<link rel="stylesheet" href="../css/faq.css"/>
+<link rel="stylesheet" href="../css/footer.css"/>
+<link rel="stylesheet" href="../css/review.css"/>
+<!--Fav-icon------------------------------>
+<link rel="shortcut icon" href="images/fav-icon.png"/>
+<!--poppins-font-family------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--using-Font-Awesome-------------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/index.html"><img src="/img/SterlingLogo.svg" class="logo"></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#" class="active">Pages +</a>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Services +</a>
+                            <ul>
+                                <li><a href="#">Auction Status</a></li>
+                                <li><a href="/pages/review.html">Review</a></li>
+                                <li><a href="#">Inspection</a></li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./faq.html">FAQs</a></li>
+                <li><a href="#">Categories +</a>
+                    <ul>
+                        <li><a href="/pages/auction-page-all-items.html">All</a></li>
+                        <li><a href="/pages/auction-page-vehicles.html">Cars</a></li>
+                        <li><a href="/pages/auction-page-furnitures.html">Furnitures</a></li>
+                        <li><a href="/pages/auctions-page-electronics.html">Electronics</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <!--Testimonials------------------->
+    <section id="testimonials">
+        <!--heading--->
+        <div class="testimonial-heading">
+            <span>Comments</span>
+            <h1>Bidders Reviews</h1>
+        </div>
+
+        <!-- Write Review -->
+        <p>Write your review   <i class='bx bx-comment-detail'></i></p>
+        <div class="reviews">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+        </div>
+
+        <form action="#" class="review-bar">
+            <input type="text" placeholder="Enter your review">
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="recent-reviews">Recent Reviews</p>
+        
+        <!--testimonials-box-container------>
+        <div class="testimonial-box-container">
+
+            <!--BOX-1-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="/img/1-Mobolaji.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Mobolaji Ibine</strong>
+                            <span>Service Value Assessment</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-2-------------->
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/img/2-Oghene.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Oghenedoro Ohwojivwiogor</strong>
+                            <span>Oron Rd Branch, Uyo</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-3-------------->
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/img/3-Joshua.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Joshua Hungevu</strong>
+                            <span>Central Account Management Unit</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-4-------------->
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/img/4-John.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>John Dada</strong>
+                            <span>Ilorin Branch</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-5-------------->
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/img/5-Damian.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Damian Adikwu</strong>
+                            <span>Okada Branch, Edo</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-6-------------->
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/img/6-Endurance.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Endurance Benson</strong>
+                            <span>Adesuwa Branch, Edo</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sterling Auction Hub</h4>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><a href="#">about the platform</a></li>
+                        <li><a href="#">Available services</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Bid status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Enquiry and Resolution</h4>
+                    <hr>
+                    <br>
+                    <p class="p1">Get enquires, reviews and offers available.</p>
+                    <p class="p2">Type the subject of your email in the box below.</p>
+                    <br>
+
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Enter your email subject">
+                        <button type="submit"><i class='bx bxs-envelope'></i></button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>    
+        
+        <div class="container footer-col2">
+            <hr>
+            <br>
+            <div class="bottom">
+                <!-- <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Cookies policy</a></li>
+                </ul> -->
+                <p>© 2023 Vanilla FrontEnd developement Group for Sterling Bank. All rights reserved.</p>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+    </footer>
+
+
+    </section>
+</body>
+</html>
