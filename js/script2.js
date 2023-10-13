@@ -20,7 +20,7 @@ const prev = () => {
 
 
 const myImg = () =>{
-	return slider.setAttribute('src', "/img/auction-pictures/"+otherImages[i]);	
+	return slider.setAttribute('src', "./img/auction-pictures/"+otherImages[i]);	
 }
 
 const update = () => {

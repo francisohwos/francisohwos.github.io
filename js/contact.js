@@ -49,7 +49,7 @@ const setError = (element, message) =>{
     }
 
     if(usernameValue && passwordValue){
-    window.location ='/pages/auction-page-all-items.html'
+    window.location ='./pages/auction-page-all-items.html'
     }
  }
 
